@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias dinâmicas</title>
+</head>
+
+<body>
+
+<h1>Teste de imagens responsivas</h1>
+
+<picture>
+
+    <!-- Tela grande -->
+    <source media="(min-width:1450px)"
+            srcset="imagens/imagem1.png"
+            type="image/png">
+
+    <!-- Tela média -->
+    <source media="(min-width:1200px)"
+            srcset="imagens/imagem2.png"
+            type="image/png">
+
+    <!-- Tela pequena -->
+    <img src="imagens/imagem3.png"
+         alt="Imagem pequena"
+         >
+<!-- tem que esta na ordem PEQUENA,MEDIA,GRANDE -->
+</picture>
+<h1>Reproduzindo Aúdio</h1>
+<audio preload="metadata "controls loop>
+<audio src="midia/Eyes - Patrick Jordan Patrikios.mp3" controls></audio>
+<source src="midia/Eyes - Patrick Jordan Patrikios.mp3" type="audio/mpeg">
+<source src="midia/Eyes - Patrick Jordan Patrikios.mp3" type="audio/ogg">
+<source src="midia/Eyes - Patrick Jordan Patrikios.mp3" type="audio/wav">
+<p>infelizmente não foi possivel  reproduzir o  audio</p>
+<a href="midia/Eyes - Patrick Jordan Patrikios.mp3">clique aqui para abaixar o arquivo mp3</a>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Vetor JS</title>
+</head>
+<body>
+
+<script>
+let vetor = [];
+
+for (let i = 0; i < 10; i++) {
+    vetor[i] = prompt("Digite o valor para a posição " + i + ":");
+}
+
+let posicao = prompt("Qual posição do vetor você quer visualizar? (0 a 9)");
+posicao = parseInt(posicao);
+
+if (posicao >= 0 && posicao < 10) {
+    alert("O valor na posição " + posicao + " é: " + vetor[posicao]);
+} else {
+    alert("Posição inválida!");
+}
+</script>
+
+</body>
+</html>
